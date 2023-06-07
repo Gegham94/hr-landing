@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="HR-Hunt">
+    <meta name="keywords" content="HR-Hunt">
+    <title>HR-Hunt</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&amp;apikey=c5c4a0e4-1beb-493c-973c-959c08cc5b3a"></script>
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [57.829152, 28.357891],
+                    zoom: 16
+                }, {
+                    searchControlProvider: false
+                }),
+                myPlacemarkWithContent = new ymaps.Placemark([57.829152, 28.357891], {
+                    hintContent: 'Hr Hunt',
+                });
+
+            myMap.geoObjects
+                .add(myPlacemarkWithContent);
+        });
+    </script>
+</head>
+<body>
+
+<header class="content ">
+    <div class="header">
+        <div class="header-logo" onclick="window.location.href='/'">
+            <p>HR-Hunt</p>
+        </div>
+        <div class="header-menu">
+            <div>
+                <img src="../assets/img/close.svg" alt="close" style="height: 60px;cursor: pointer"
+                     onclick="window.location.href='/'">
+            </div>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="content">
+    <div class="contact">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-form">
+                    <div>
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="text" name="surname" placeholder="Фамилия">
+                        <input class="email" id="email" name="email" placeholder="Email" type="email">
+                        <span id="error"></span>
+                        <input class="message" type="text" placeholder="Письмо">
+                        <button class="content-form-button" id='button-send' disabled>Отправить</button>
+                        <div id="popup" class="popup">
+                            <p>Ваше письмо было успешно отправлено!</p>
+                            <div id="button-close">&#x2715</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="map" style="height: 50vh;"></div>
+        </div>
+    </div>
+</section>
+<footer class="wrapper">
+    <div class="content">
+        <div class="footer">
+            <div class="footer-item">
+                <div class="footer-item__img">
+                    <img loading="lazy" src="../assets/img/footer-logo.webp" alt="logo">
+                    <p class="footer-logo-text" >Hr-Hunt</p>
+                </div>
+                <div class="footer-item__link">
+                    <a href="https://t.me/+37493884401" target="_blank">Telegram</a>
+                    <a href="https://wa.me/+37493884401" target="_blank">Whatsapp</a>
+                </div>
+            </div>
+            <div class="footer-item footer-item__info">
+                <div class="footer-item__info-block">
+                    <p>Телефон</p>
+                    <p>+9150937788</p>
+                </div>
+                <div class="footer-item__info-block">
+                    <p>Почта</p>
+                    <p>support@hrhunt.ru</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div>
+                    <p>© HR-Hunt, 2021 — 2022</p>
+                </div>
+                <div>
+                    <a href="/contact">Контакты</a></br>
+                    <a href="/user-agreement">Пользовательское соглашение</a>
+                    <a href="/privacy-policy">Политика конфиденциальности</a>
+                    <p>Все права защищены</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src='//code.tidio.co/ae8kspxkubbiish2hhtkeqjr09f2jhvx.js' async></script>
+<script src="../assets/js/validator.js" ></script>
+</body>
+</html>

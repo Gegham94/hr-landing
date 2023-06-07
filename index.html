@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="HR-Hunt">
+    <meta name="keywords" content="HR-Hunt">
+    <title>HR-Hunt</title>
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/favicon.svg">
+</head>
+<body>
+
+<header class="content ">
+    <div class="header">
+        <div class="header-logo">
+<!--            <img loading="lazy" src="./assets/img/HR-Robot_logo.png" alt="logo">-->
+            <div class="header-logo">
+                <p class="header-logo-text">Hr-Hunt</p>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div>
+                <div class="header-menu__button">
+                    <div class="header-menu__login button-animation" onclick="goToCompany()">
+                        <img loading="lazy" src="./assets/img/arrow-green.png" alt="arrow">
+                        <span>Компаниям</span>
+                    </div>
+                    <div class="header-menu__registration button-animation" onclick="goToSpecialist()">
+                        <img loading="lazy" src="./assets/img/arrow.png" alt="arrow">
+                        <span>Специалистам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="wrapper">
+    <div class="content">
+        <div class="banner">
+            <div class="banner-info">
+                <h1>Помогаем компаниям <span>найти</span> специалистов</h1>
+                <p>💚 А специалистам устроиться на работу мечты</p>
+                <div class="banner-button">
+                    <div class="banner-button__specialist button-animation" onclick="goToCompany()">
+                        <img loading="lazy" src="./assets/img/arrow.png" alt="arrow">
+                        <span>найти специалиста</span>
+                    </div>
+                    <div class="banner-button__work button-animation" onclick="goToSpecialist()">
+                        <img loading="lazy" src="./assets/img/arrow.png" alt="arrow">
+                        <span>найти работу</span>
+                    </div>
+                </div>
+            </div>
+            <img loading="lazy" src="./assets/img/banner-img.png" alt="banner-img">
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="company-info">
+        <div class="company-info__head">
+            <h2 class="company-info__title">
+                Для компаний в нашей системе <span>HR-Hunt</span> есть возожность
+            </h2>
+            <div>
+                <div class="company-info__question">
+                    <p>
+                        <img loading="lazy" src="./assets/img/question.png" alt="question">
+                        Фиксированный тариф
+                        по оплате за 3-х специалистов
+                    </p>
+                    <div class="company-info__question-item">
+                        <span class="company-info__question-item__title">Базовый Тариф</span>
+                        <span class="company-info__question-item__price">120 000 ₽</span>
+                        <span class="company-info__question-item__info">За каждого сотрудника 40 000 руб</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="company-info__card">
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/employees.png" alt="employees">
+                <div>
+                    <div class="company-info__card-title">Компаниям искать сотрудников</div>
+                    <p class="company-info__card-text">Создайте персональную карточку и опубликуйте вакансию с
+                        использованием различных фильтров</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/analytics.png" alt="employees">
+                <div>
+                    <div class="company-info__card-title">Получать аналитику специалистов</div>
+                    <p class="company-info__card-text">Система анализирует вашу вакансию и максимально точно показывает
+                        подходящих сотрудников</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/chat.png" alt="chat">
+                <div>
+                    <div class="company-info__card-title">Общение в чате</div>
+                    <p class="company-info__card-text">Возможность общения напрямую со специалистами которые прошли
+                        <span>тесты</span> и набрали высокие балы</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/saving_time.png" alt="employees">
+                <div>
+                    <div class="company-info__card-title">Экономия времени</div>
+                    <p class="company-info__card-text">Наша система сэкономит вам деньги и время на организацию
+                        собеседований и расходов на рекрутеров</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="content">-->
+<!--    <div class="already-working">-->
+<!--        <h2 class="already-working__title">С нами уже работают</h2>-->
+<!--    </div>-->
+<!--    <div id="already-working__slider">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/01.png" alt="ararat">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/02.png" alt="ararat">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/03.png" alt="aromatniy-mir">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/04.png" alt="bells">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/05.png" alt="dobrolet">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/06.png" alt="music-box">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/07.png" alt="ravon">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/08.png" alt="s7-airlines">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/09.png" alt="sber">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/10.png" alt="sbermarket">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/11.png" alt="sbp">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/12.png"-->
+<!--             alt="swiss-international-air-lines">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/13.png" alt="tochka">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/14.png" alt="tsum">-->
+<!--        <img loading="lazy" class="already-working__slider-item" src="./assets/img/logo/15.png" alt="vkusvill">-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="content">
+    <div class="slider-block">
+        <div class="slider-block__info">
+            <div class="slider-block__info-item">
+                <p>
+                    Используйте нашу систему для поиска квалифицированных сотрудников
+                </p>
+                <p>
+                    Интуитивно понятный интерфейс поможет вам это сделать в считанные минуты
+                </p>
+                <p>
+                    Специальная система тестирования еще более точно подберет вам нужных специалистов
+                </p>
+            </div>
+            <div class="slider-block__info-button button-animation" onclick="goToCompany()">
+                <img loading="lazy" src="./assets/img/arrow.png" alt="arrow">
+                <span>найти специалиста</span>
+            </div>
+        </div>
+        <div class="slider-block__right">
+            <div class="slider-block__content">
+                <div class="slider-block__item">
+                    <div class="slider-block__item-cloned slider-for">
+                        <img loading="lazy" src="./assets/img/slide1.png" alt="slide1">
+                        <img loading="lazy" src="./assets/img/slide2.png" alt="slide2">
+                        <img loading="lazy" src="./assets/img/slide3.png" alt="slide3">
+                        <img loading="lazy" src="./assets/img/slide4.png" alt="slide4">
+                        <img loading="lazy" src="./assets/img/slide5.png" alt="slide5">
+                    </div>
+                    <img loading="lazy" class="slider-block__img" src="./assets/img/CPU.png" alt="CPU">
+                </div>
+            </div>
+            <div class="slider-block__text">
+                <div class="slider-block__text-item">
+                    <div class="slider-block__text-info slider-nav">
+                        <div>
+                            <h3>Добавить вакансию</h3>
+                            <p>Создайте персональную карточку и опубликуйте вакансию с использованием различных
+                                фильтров</p>
+                        </div>
+                        <div>
+                            <h3>Мои вакансии</h3>
+                            <p> Показаны все отклики на ваши вакансии</p>
+                            <p> Сортировка по заполнению заявки на вакансию</p>
+                        </div>
+                        <div>
+                            <h3>Аналитика</h3>
+                            <p> Показывает сколько откликов на вашу вакансию</p>
+                            <p> Сколько специалистов на собеседовании и т.д.</p>
+                        </div>
+                        <div>
+                            <h3>Специалисты</h3>
+                            <p>Подробные карточки сотрудников, которые откликнулись на вакансию</p>
+                            <p>В карточке так же будут показаны тесты который прошел сооискатель</p>
+                        </div>
+                        <div>
+                            <h3>Баланс</h3>
+                            <p>Потробный баланс по оплате за вакансии</p>
+                            <p>Возможность выгрузить все платежные документы</p>
+                        </div>
+                    </div>
+                    <div class="slider-block__navigation">
+                        <svg class="arrow_prev" width="39" height="30" viewBox="0 0 39 30" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38 15.0372L1.99999 14.9627" stroke="#93AFA9" stroke-width="2"
+                                  stroke-linecap="round"/>
+                            <path d="M15 29L2.09083 15.6964C1.71439 15.3084 1.71439 14.6915 2.09083 14.3036L15 1"
+                                  stroke="#93AFA9" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="slider-block__numbers">
+                            <span class="slider-block__active">01</span>
+                            <span class="slider-block__divide">/</span>
+                            <span class="slider-block__total"></span>
+                        </div>
+                        <svg class="arrow_next" width="39" height="30" viewBox="0 0 39 30" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14.9628L37 15.0373" stroke="#93AFA9" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 1L36.9092 14.3036C37.2856 14.6916 37.2856 15.3085 36.9092 15.6964L24 29"
+                                  stroke="#93AFA9" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper">
+    <div class="content">
+        <div class="posted-vacancies">
+            <div class="posted-vacancies__info">
+                <div>
+                    <h2 class="posted-vacancies__title">Топ выложенных вакансий в <span>HR-Hunt</span> за последнее
+                        время </h2>
+                    <div class="posted-vacancies__button button-animation" onclick="goToSpecialist()">
+                        <img loading="lazy" src="./assets/img/arrow.png" alt="arrow">
+                        <span>найти работу</span>
+                    </div>
+                </div>
+                <div class="posted-vacancies__text">
+                    <p>Наш поиск использует искусственный интеллект, а сайт обрабатывает до 1000 запросов в день</p>
+                    <p>Каждый месяц на сайте появляется более 5000 вакансий, а технологии для работы с персоналом
+                        насчитывают более 20 позиций</p>
+                    <p>Ежедневно <span>мы помогаем специалистам</span> изменить свою жизнь к лучшему</p>
+                </div>
+            </div>
+            <div class="posted-vacancies__slider vacancies-card">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="card">
+        <h2 class="card-title">Пакеты Услуг</h2>
+        <div class="card-content">
+            <div class="card-item">
+                <div class="card-item_hover"></div>
+                <img src="./assets/img/base.png" alt="base">
+                <div class="card-item_content">
+                        <div class="card-item_head">
+                        <span class="card-item_price">₽ 129
+                            <sup>
+                                <span class="card-item_cent">
+                                    <span>.99</span>
+                                    <span class="card-item_price-info">/3 разработчика</span>
+                                </span>
+                            </sup>
+                        </span>
+                        </div>
+                        <ul class="card-item_info">
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>SEO</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Анализ ключевых слов</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Анализ Конкурентов</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="material symbols">
+                                <span>Автоматизация email-маркетинга</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Oплата за клик</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Копирайтинг</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Услуги CRM систем</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span> Воронка продаж</span>
+                            </li>
+                        </ul>
+                        <div class="card-item_button">
+                            <div>
+                                Купить сейчас
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="card-item active classic">
+                <div class="card-item_hover"></div>
+                <img src="./assets/img/classic.png" alt="classic">
+                <div class="card-item_content">
+                    <div class="card-item_head">
+                        <span class="card-item_price">₽ 129
+                            <sup>
+                                <span class="card-item_cent">
+                                    <span>.99</span>
+                                    <span class="card-item_price-info">/3 разработчика</span>
+                                </span>
+                            </sup>
+                        </span>
+                        </div>
+                    <ul class="card-item_info">
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>SEO</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Анализ ключевых слов</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Анализ Конкурентов</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Автоматизация email-маркетинга</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="close circle">
+                                <span>Oплата за клик</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="close circle">
+                                <span>Копирайтинг</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="close circle">
+                                <span>Услуги CRM систем</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="close circle">
+                                <span> Воронка продаж</span>
+                            </li>
+                        </ul>
+                    <div class="card-item_button">
+                            <div>
+                                Купить сейчас
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-item_hover"></div>
+                <img src="./assets/img/premium.png" alt="premium">
+                <div class="card-item_content">
+                        <div class="card-item_head">
+                        <span class="card-item_price">₽ 129
+                            <sup>
+                                <span class="card-item_cent">
+                                    <span>.99</span>
+                                </span>
+                            </sup>
+                        </span>
+                            <img src="./assets/img/Vector.png" alt="Vector">
+                        </div>
+                        <ul class="card-item_info">
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>SEO</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Анализ ключевых слов</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>анализ конкурентов</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/material-symbols.png" alt="material symbols">
+                                <span>Автоматизация email-маркетинга</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Oплата за клик</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Копирайтинг</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span>Услуги CRM систем</span>
+                            </li>
+                            <li class="card-item_disabled">
+                                <img src="./assets/img/close-circle.png" alt="close circle">
+                                <span> Воронка продаж</span>
+                            </li>
+                        </ul>
+                        <div class="card-item_button">
+                            <div>
+                                Купить сейчас
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="content">
+    <div class="company-info">
+        <div class="company-info__head company-info__head-footer">
+            <h2 class="company-info__title">
+                Для специалистов в нашей системе <span>HR-Hunt</span> есть возожность
+            </h2>
+            <div class="company-info__question company-info__question-footer company-info__question-absolute">
+                <img loading="lazy" src="./assets/img/robot.png" alt="question">
+                <div>
+                    <img loading="lazy" src="./assets/img/clouds.png" alt="clouds">
+                    <p>Возможность найти
+                        лучшую работу 😉 </p>
+                </div>
+            </div>
+        </div>
+        <div class="company-info__card">
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/employees.png" alt="employees">
+                <div>
+                    <div class="company-info__card-title">Компаниям искать сотрудников</div>
+                    <p class="company-info__card-text">Создайте персональную карточку, выгружайте свое резюме, ищите
+                        компании для дальнейшего сотрудничества</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/classification.png" alt="classification">
+                <div>
+                    <div class="company-info__card-title">Потвердить свою классификацию</div>
+                    <p class="company-info__card-text">Заполни резюме, добавь навыки, пройди тесты. Система предложит
+                        твою кандидатуру компаниям</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/chat.png" alt="chat">
+                <div>
+                    <div class="company-info__card-title">Общение в чате</div>
+                    <p class="company-info__card-text">Возможность общения напрямую с компаний которая отобрала тебя в
+                        качестве кандидата</p>
+                </div>
+            </div>
+            <div class="company-info__card-item">
+                <img loading="lazy" src="./assets/img/freeresume.png" alt="freeresume">
+                <div>
+                    <div class="company-info__card-title">Бесплатное резюме</div>
+                    <p class="company-info__card-text">Заполни всю информацию о себе, и Hr-Hunt позаподиться о том
+                        чтобы у тебя был самый крутой шаблон резюме</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="wrapper">
+    <div class="content">
+        <div class="footer">
+            <div class="footer-item">
+                <div class="footer-item__img">
+                    <img loading="lazy" src="./assets/img/footer-logo.png" alt="logo">
+                    <p class="footer-logo-text" >Hr-Hunt</p>
+                </div>
+                <div class="footer-item__link">
+                    <a href="https://t.me/+37493884401" target="_blank">Telegram</a>
+                    <a href="https://wa.me/+37493884401" target="_blank">Whatsapp</a>
+                </div>
+            </div>
+            <div class="footer-item footer-item__info">
+                <div class="footer-item__info-block">
+                    <p>Телефон</p>
+                    <p>+9150937788</p>
+                </div>
+                <div class="footer-item__info-block">
+                    <p>Почта</p>
+                    <p>support@hrhunt.ru</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div>
+                    <p>© HR-Hunt, 2021 — 2022</p>
+                </div>
+                <div>
+                    <a href="/contact">Контакты</a></br>
+                    <a href="/user-agreement">Пользовательское соглашение</a>
+                    <a href="/privacy-policy">Политика конфиденциальности</a>
+                    <p>Все права защищены</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--development-->
+<!--<script id="cookieyes" src="https://cdn-cookieyes.com/client_data/3c3d3c68bbb4340159fd057e/script.js">-->
+<!--</script>-->
+<!--development-->
+<!--production-->
+<script id="cookieyes" src="https://cdn-cookieyes.com/client_data/b47c025511475c7acc67571e/script.js"></script>
+<!--production-->
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script defer src="./assets/js/request.js" async></script>
+<script defer src="./assets/js/script.js" async></script>
+</body>
+</html>
